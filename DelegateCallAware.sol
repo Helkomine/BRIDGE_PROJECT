@@ -9,7 +9,7 @@ import {NotOwner} from "./Error.sol";
 /// @dev A stateless contract that allows you to infer if the current call has been delegated or not
 /// Pattern used here is from UUPS implementation by the OpenZeppelin team
 abstract contract DelegateCallAware {
-    address private immutable __self = address(this);
+    address private immutable __self = address(this); //0xED26e46f38957763f83f2C45f6Fb6702cfEBc7D8
 
     /**
      * @dev Check that the execution is being performed through a delegate call. This allows a function to be
